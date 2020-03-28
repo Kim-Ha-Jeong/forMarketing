@@ -6,8 +6,8 @@ import LoginScreen from './src/LoginScreen';
 import SignUpScreen from './src/SignUpScreen';
 import MainScreen from './src/MainScreen';
 import MakeScreen from './src/MakeScreen';
-import ResultScreen from './src/ResultScreen';
 import SettingScreen from './src/SettingScreen';
+import TimeTableScreen from './src/TimeTableScreen';
 
 const Stack = createStackNavigator();
 
@@ -19,8 +19,8 @@ function App() {
         <Stack.Screen name="SignUp" component={SignUpScreen} options={{ headerShown: false, }} />
         <Stack.Screen name="Main" component={MainScreen} options={{ headerShown: false, }} />
         <Stack.Screen name="Make" component={MakeScreen} options={{ headerShown: false, }} />
-        <Stack.Screen name="Result" component={ResultScreen} options={{ headerShown: false, }} />
         <Stack.Screen name="Setting" component={SettingScreen} options={{ headerShown: false, }} />
+        <Stack.Screen name="Timetable" component={TimeTableScreen} options={{ headerShown: false, }} />
       </Stack.Navigator>
     </NavigationContainer>
   )

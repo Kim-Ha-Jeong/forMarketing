@@ -17,7 +17,8 @@ export default class Make extends Component{
                 >
                     <Ionicons name='ios-arrow-back' size={30} color='#ec1468' />
                 </TouchableOpacity>
-                <Text>인력표 만들기</Text>
+                <Text>시간표 만들기</Text>
+                
             </View>
         )
     }

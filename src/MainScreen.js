@@ -25,14 +25,14 @@ export default class MainScrenn extends Component {
                     style={styles.icon}
                 />
                 <Button
+                    buttonText="시간표 만들기"
+                    style={styles.mainButton}
+                    onPress={() => this.props.navigation.navigate('Timetable')}
+                />
+                <Button
                     buttonText="인력표 만들기"
                     style={styles.mainButton}
                     onPress={() => this.props.navigation.navigate('Make')}
-                />
-                <Button
-                    buttonText="지난 인력표 보기"
-                    style={styles.mainButton}
-                    onPress={() => this.props.navigation.navigate('Result')}
                 />
                 <TouchableOpacity
                     style={{ marginTop: 35 }}
