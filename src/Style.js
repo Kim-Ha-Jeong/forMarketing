@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
         width: '80%',
         height: 40,
         backgroundColor: '#ec1468',
-        marginTop: '5%',
+        marginTop: 30,
         borderRadius: 20,
         alignItems: 'center',
         justifyContent: 'center'
@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         textAlign: 'center',
         zIndex: -1,
-        paddingTop: 12
+        paddingTop: 0
     },
     noAccountText: {
         marginTop: '10%',
