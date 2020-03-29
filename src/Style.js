@@ -90,6 +90,23 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         textAlign: 'center',
         marginBottom: 35
+    },
+    tileButton: {
+        backgroundColor: '#fff',
+        width: 70,
+        height: 53,
+        borderWidth: 1,
+        borderColor: '#feecf3',
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    tileText: {
+        color: 'black',
+        fontSize: 15,
+        fontWeight: 'bold',
+        textAlign: 'center',
+        zIndex: -1,
+        paddingTop: 0
     }
 })
 
