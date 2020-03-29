@@ -7,7 +7,7 @@ import SignUpScreen from './src/SignUpScreen';
 import MainScreen from './src/MainScreen';
 import MakeScreen from './src/MakeScreen';
 import SettingScreen from './src/SettingScreen';
-import TimeTableScreen from './src/TimeTableScreen';
+import TimeTableScreen from './src/TimetableScreen';
 
 const Stack = createStackNavigator();
 
