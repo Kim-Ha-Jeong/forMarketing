@@ -93,8 +93,8 @@ const styles = StyleSheet.create({
     },
     tileButton: {
         backgroundColor: '#fff',
-        width: 70,
-        height: 53,
+        width: 75,
+        height: 55,
         borderWidth: 1,
         borderColor: '#feecf3',
         justifyContent: 'center',

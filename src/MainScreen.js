@@ -99,7 +99,7 @@ export default class MainScrenn extends Component {
             <View style={styles.container}>
                 <TouchableOpacity
                     style={[styles.arrow, this.props.style]}
-                    onPress={() => this.props.navigation.navigate('Home')}
+                    onPress={() => this.props.navigation.navigate('Login')}
                 >
                     <Ionicons name='ios-arrow-back' size={30} color='#ec1468' />
                 </TouchableOpacity>

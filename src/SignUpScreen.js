@@ -32,7 +32,7 @@ export default class SignUpScreen extends Component {
                 displayName: this.state.name,
                 photoURL: this.state.team
             }))
-            .then(()=> this.props.navigation.navigate('Main'))
+            .then(()=> this.props.navigation.navigate('Login'))
             .catch(() => this.refs.toast.show('이메일 형식을 확인해 주세요\n비밀번호는 6자 이상이어야 합니다.',1000))
     }
 
@@ -41,7 +41,7 @@ export default class SignUpScreen extends Component {
             <View style={styles.container}>
                 <TouchableOpacity
                     style={[styles.arrow, this.props.style]}
-                    onPress={() => this.props.navigation.navigate('Home')}
+                    onPress={() => this.props.navigation.navigate('Login')}
                 >
                     <Ionicons name='ios-arrow-back' size={30} color='#ec1468' />
                 </TouchableOpacity>

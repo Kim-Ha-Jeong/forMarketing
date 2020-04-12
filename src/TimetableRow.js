@@ -13,12 +13,12 @@ export default class TimetableRow extends Component {
     render() {
         return (
             <View style={{ flexDirection: "row" }} >
-                <TileButton text={this.props.row} style={{ width: 30 }} dis="true" />
-                <TileButton text={this.props.row} col="Mon"/>
-                <TileButton text={this.props.row} col="Tue"/>
-                <TileButton text={this.props.row} col="Wed"/>
-                <TileButton text={this.props.row} col="Thu"/>
-                <TileButton text={this.props.row} col="Fri"/>
+                <TileButton row={this.props.row} text={this.props.row} style={{ width: 30 }} dis="true" />
+                <TileButton row={this.props.row} col="Mon"/>
+                <TileButton row={this.props.row} col="Tue"/>
+                <TileButton row={this.props.row} col="Wed"/>
+                <TileButton row={this.props.row} col="Thu"/>
+                <TileButton row={this.props.row} col="Fri"/>
             </View>
         )
     }

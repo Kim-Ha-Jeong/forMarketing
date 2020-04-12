@@ -17,7 +17,7 @@ export default class SettingScreen extends Component {
         firebase
             .auth()
             .signOut()
-            .then(() => this.props.navigation.navigate('Home'))
+            .then(() => this.props.navigation.navigate('Login'))
             .catch(() => this.refs.toast.show('오류가 발생했습니다. 다시 시도해 주세요', 1000));
     }
 
