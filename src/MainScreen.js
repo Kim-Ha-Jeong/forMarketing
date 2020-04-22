@@ -92,8 +92,76 @@ export default class MainScrenn extends Component {
         })
         this.props.navigation.push('Timetable');
     }
-
-
+    
+    makeLabor = () => {
+        var isExist = firebase.database().ref('labor/');
+        isExist.on("value", function (result) {
+            console.log(result.val());
+            if (!result.val()) {
+                firebase.database().ref().put({
+                    labor: {
+                        Mon: {
+                            1: '',
+                            2: '',
+                            3: '',
+                            4: '',
+                            5: '',
+                            6: '',
+                            7: '',
+                            8: '',
+                            9: ''
+                        },
+                        Tue: {
+                            1: '',
+                            2: '',
+                            3: '',
+                            4: '',
+                            5: '',
+                            6: '',
+                            7: '',
+                            8: '',
+                            9: ''
+                        },
+                        Wed: {
+                            1: '',
+                            2: '',
+                            3: '',
+                            4: '',
+                            5: '',
+                            6: '',
+                            7: '',
+                            8: '',
+                            9: ''
+                        },
+                        Thu: {
+                            1: '',
+                            2: '',
+                            3: '',
+                            4: '',
+                            5: '',
+                            6: '',
+                            7: '',
+                            8: '',
+                            9: ''
+                        },
+                        Fri: {
+                            1: '',
+                            2: '',
+                            3: '',
+                            4: '',
+                            5: '',
+                            6: '',
+                            7: '',
+                            8: '',
+                            9: ''
+                        }
+                    }
+                })
+            }
+        })
+        this.props.navigation.push('Make');
+    }
+    
     render() {
         return (
             <View style={styles.container}>
@@ -115,7 +183,7 @@ export default class MainScrenn extends Component {
                 <Button
                     buttonText="인력표 만들기"
                     style={styles.mainButton}
-                    onPress={() => this.props.navigation.navigate('Make')}
+                    onPress={this.makeLabor}
                 />
                 <TouchableOpacity
                     style={{ marginTop: 35 }}
