@@ -12,7 +12,7 @@ import firebase from 'react-native-firebase';
 import Row from './TimetableRow';
 import TileButton from './TileButton';
 
-export default class Make extends Component {
+export default class Timetable extends Component {
 
   render() {
     return (
