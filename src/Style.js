@@ -107,6 +107,14 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         zIndex: -1,
         paddingTop: 0
+    },
+    makeText: {
+        color: 'black',
+        fontSize: 8,
+        fontWeight: 'bold',
+        textAlign: 'center',
+        zIndex: -1,
+        paddingTop: 0
     }
 })
 

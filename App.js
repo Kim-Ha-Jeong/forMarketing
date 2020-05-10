@@ -5,10 +5,11 @@ import { createStackNavigator } from '@react-navigation/stack';
 import LoginScreen from './src/LoginScreen';
 import SignUpScreen from './src/SignUpScreen';
 import MainScreen from './src/MainScreen';
-import MakeScreen from './src/MakeScreen';
+import MakeScreen from './src/BoothScreen';
 import SettingScreen from './src/SettingScreen';
 import TimeTableScreen from './src/TimetableScreen';
-
+import LaborDetail from './src/LaborDetail';
+import EventScreen from './src/EventScreen';
 const Stack = createStackNavigator();
 
 function App() {
@@ -21,6 +22,8 @@ function App() {
         <Stack.Screen name="Make" component={MakeScreen} options={{ headerShown: false, }} />
         <Stack.Screen name="Setting" component={SettingScreen} options={{ headerShown: false, }} />
         <Stack.Screen name="Timetable" component={TimeTableScreen} options={{ headerShown: false, }} />
+        <Stack.Screen name="LaborDetail" component={LaborDetail} options={{ headerShown: false, }} />
+        <Stack.Screen name="Event" component={EventScreen} options={{ headerShown: false, }} />
       </Stack.Navigator>
     </NavigationContainer>
   )

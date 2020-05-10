@@ -6,10 +6,10 @@ import {
 } from 'react-native';
 import styles from './Style';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import Row from './MakeRow';
-import MakeButton from './MakeButton';
+import Row from './EventRow';
+import MakeButton from './EventButton';
 
-export default class Make extends Component {
+export default class Booth extends Component {
     render() {
         return (
             <View style={styles.container}>

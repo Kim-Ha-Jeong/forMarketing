@@ -3,9 +3,9 @@ import {
     View
 } from 'react-native';
 import styles from './Style'
-import MakeButton from './MakeButton'
+import MakeButton from './EventButton'
 
-export default class MakeRow extends Component {
+export default class BoothRow extends Component {
     constructor(props) {
         super(props)
     }
