@@ -22,7 +22,6 @@ export default class MainScrenn extends Component {
         var user = firebase.auth().currentUser;
         var isExist = firebase.database().ref('users/' + user.uid + '/name');
         isExist.on("value", function (result) {
-            console.log(result.val());
             if (!result.val()) {
                 var info = user.photoURL.split('/');
                 firebase.database().ref('users/' + user.uid).set({
@@ -96,7 +95,6 @@ export default class MainScrenn extends Component {
     makeLabor = () => {
         var isExist = firebase.database().ref('labor/');
         isExist.on("value", function (result) {
-            console.log(result.val());
             if (!result.val()) {
                 firebase.database().ref().put({
                     labor: {
@@ -181,9 +179,14 @@ export default class MainScrenn extends Component {
                     onPress={this.firstMakeTimetable}
                 />
                 <Button
-                    buttonText="인력표 만들기"
+                    buttonText="오프라인 부스 인력표"
                     style={styles.mainButton}
                     onPress={this.makeLabor}
+                />
+                <Button
+                    buttonText="행사 인력표"
+                    style={styles.mainButton}
+                    onPress={() => this.props.navigation.navigate('Event')}
                 />
                 <TouchableOpacity
                     style={{ marginTop: 35 }}

@@ -6,7 +6,7 @@ import {
 import styles from './Style';
 import firebase from 'react-native-firebase';
 
-export default class MakeButton extends Component {
+export default class BoothButton extends Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -27,12 +27,20 @@ export default class MakeButton extends Component {
                     var key = resultChild.key
                     var nametest = resultChild.child('name').val().slice(1, 3)
                     var name = nametest.concat(" ")
+                    var number = resultChild.child('number').val()
+                    var position = resultChild.child('position').val()
+                    var team = resultChild.child('team').val()
                     var time = firebase.database().ref("users/" + key + "/timetable/" + col + "/" + row)
                     time.on("value", (tt) => {
                         if (tt.val() === false && flag === 0) {
-                            this.setState({
-                                name: this.state.name.concat(name)
-                            })
+                            if(row==3 || row==4 || row==5 || row==6 || row==7){
+                                this.setState({
+                                    name: this.state.name.concat(name)
+                                })
+                                firebase.database().ref('labor/'+col).update({
+                                    [row] : [this.state.name]
+                                });
+                            }
                         } else if (tt.val() == null && flag === 0) {
                             this.setState({
                                 name: this.state.name.concat(this.props.text)
