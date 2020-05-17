@@ -51,8 +51,10 @@ export default class Booth extends Component {
                 <Row row="7" />
                 <Row row="8" />
                 <Row row="9" />
+                {/*
                 <Button buttonText='안녕'
                 onPress={()=>this.filter()}/>
+                */}
             </View>
         )
     }
