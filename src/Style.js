@@ -8,6 +8,9 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         backgroundColor: '#feecf3',
     },
+    row: {
+        flexDirection : 'row',
+    },
     icon: {
         width: 75,
         height: 75,
@@ -115,7 +118,7 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         zIndex: -1,
         paddingTop: 0
-    }
+    },
 })
 
 export default styles;
