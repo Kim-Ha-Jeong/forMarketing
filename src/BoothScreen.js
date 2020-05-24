@@ -30,7 +30,7 @@ export default class Booth extends Component {
             <View style={styles.container}>
                 <TouchableOpacity
                     style={[styles.arrow, this.props.style]}
-                    onPress={() => this.props.navigation.navigate('Main')}
+                    onPress={() => this.props.navigation.navigate('BoothSetting')}
                 >
                     <Ionicons name='ios-arrow-back' size={30} color='#ec1468' />
                 </TouchableOpacity>

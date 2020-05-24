@@ -181,7 +181,7 @@ export default class MainScreen extends Component {
                     })
                 }
             })
-            this.props.navigation.push('Make');
+            this.props.navigation.push('BoothSetting');
         }
 
         render() {

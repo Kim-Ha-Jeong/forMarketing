@@ -10,6 +10,8 @@ import SettingScreen from './src/SettingScreen';
 import TimeTableScreen from './src/TimetableScreen';
 import LaborDetail from './src/LaborDetail';
 import EventScreen from './src/EventScreen';
+import BoothSetting from './src/BoothSettingScreen';
+
 const Stack = createStackNavigator();
 
 function App() {
@@ -24,6 +26,7 @@ function App() {
         <Stack.Screen name="Timetable" component={TimeTableScreen} options={{ headerShown: false, }} />
         <Stack.Screen name="LaborDetail" component={LaborDetail} options={{ headerShown: false, }} />
         <Stack.Screen name="Event" component={EventScreen} options={{ headerShown: false, }} />
+        <Stack.Screen name="BoothSetting" component={BoothSetting} options={{ headerShown: false, }} />
       </Stack.Navigator>
     </NavigationContainer>
   )
