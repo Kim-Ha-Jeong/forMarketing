@@ -11,14 +11,11 @@ export default class BoothButton extends Component {
         super(props)
         this.state = {
             name: [],
-            dayStart: '',
-            dayEnd: '',
-            start: '',
-            end: '',
         }
 
         this.componentDidMount = this.componentDidMount.bind(this)
     }
+
 
 
     componentDidMount() {
@@ -42,57 +39,38 @@ export default class BoothButton extends Component {
                     var use = firebase.database().ref("users/" + key + "/attend")
 
 
-                    firebase.database().ref('select').once('value')
-                        .then((choice) => {
-                            var start = choice.child('start')
-                            var end = choice.child('end')
-                            console.log(start, end)
-
-                            for (var i = start; i <= end; i++) {
-                                time.on("value", (tt) => {
-                                    if (tt.val() === false && flag === 0) {
-                                        console.log('fail', i)
-                                        if ((row == i) && (col === "Mon" || col === "Tue" || col === "Wed")) {
-                                            console.log('success')
-                                            var k = 0
-                                            use.transaction(info => {
-                                                if ((flagA < 5 && this.state.name.length < 5)) {
-                                                    if (info > 0 && k == 0) {
-
-                                                        this.setState({
-                                                            name: this.state.name.concat(name)
-                                                        })
-                                                        console.log(this.state.name)
-                                                        console.log(flagA)
-                                                        k = 1
-                                                        flagA = flagA + 1
-                                                        return info - 1;
-                                                    }
-                                                }
+                    time.on("value", (tt) => {
+                        if (tt.val() === false && flag === 0) {
+                            if ((row == 3 || row == 4 || row == 5 || row == 6 ||  row == 7  ) && (col === "Tue" || col === "Wed" || col === "Thu")) {
+                                var k = 0
+                                use.transaction(info => {
+                                    if ((flagA < 4 && this.state.name.length < 4)) {
+                                        if (info > 0 && k == 0) {
+                                            this.setState({
+                                                name: this.state.name.concat(name)
                                             })
-
-
+                                            k = 1
+                                            flagA = flagA + 1
+                                            return info - 1;
                                         }
-
-                                    } else if (tt.val() == null && flag === 0) {
-                                        this.setState({
-                                            name: this.state.name.concat(this.props.text)
-                                        })
-                                        flag = 1
                                     }
                                 })
                             }
-                        })
+                        } else if (tt.val() == null && flag === 0) {
+                            this.setState({
+                                name: this.state.name.concat(this.props.text)
+                            })
+                            flag = 1
+                        }
+                    })
                 })
             })
     }
 
-
-
     render() {
         return (
             <TouchableOpacity style={[styles.tileButton, this.props.style]} >
-                <Text style={styles.makeText}>{this.state.name}</Text>
+                <Text style={[styles.makeText, {fontSize: 12}]}>{this.state.name}</Text>
             </TouchableOpacity>
         )
     }

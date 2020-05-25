@@ -19,6 +19,7 @@ export default class Booth extends Component {
                 >
                     <Ionicons name='ios-arrow-back' size={30} color='#ec1468' />
                 </TouchableOpacity>
+                <Text>오프라인 행사 인력표</Text>
                 <View style={{ flexDirection: "row", marginTop: 35 }}>
                     <MakeButton style={{ height: 30, width: 30 }} dis="true" />
                     <MakeButton text="Mon" style={{ height: 30 }} dis="true" />

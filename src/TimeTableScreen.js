@@ -23,6 +23,7 @@ export default class Timetable extends Component {
         >
           <Ionicons name='ios-arrow-back' size={30} color='#ec1468' />
         </TouchableOpacity>
+        <Text>일정이 있는 시간을 터치해주세요</Text>
         <View style={{ flexDirection: "row",marginTop: 35 }}>
           <TileButton style={{ height: 30,width: 30 }} dis="true"/>
           <TileButton text="Mon" style={{ height: 30 }} dis="true"/>

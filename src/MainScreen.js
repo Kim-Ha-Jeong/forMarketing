@@ -181,18 +181,12 @@ export default class MainScreen extends Component {
                     })
                 }
             })
-            this.props.navigation.push('BoothSetting');
+            this.props.navigation.push('Make');
         }
 
         render() {
             return (
                 <View style={styles.container}>
-                    <TouchableOpacity
-                        style={[styles.arrow, this.props.style]}
-                        onPress={() => this.props.navigation.navigate('Login')}
-                    >
-                        <Ionicons name='ios-arrow-back' size={30} color='#ec1468' />
-                    </TouchableOpacity>
                     <Image
                         source={require('./icon.png')}
                         style={styles.icon}
@@ -203,12 +197,12 @@ export default class MainScreen extends Component {
                         onPress={this.firstMakeTimetable}
                     />
                     <Button
-                        buttonText="오프라인 부스 인력표"
+                        buttonText="개강/홍보부스 인력표"
                         style={styles.mainButton}
                         onPress={this.makeLabor}
                     />
                     <Button
-                        buttonText="행사 인력표"
+                        buttonText="오프라인 행사 인력표"
                         style={styles.mainButton}
                         onPress={() => this.props.navigation.navigate('Event')}
                     />

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+{/*import React, { Component } from 'react';
 import {
     View,
     Text,
@@ -135,3 +135,4 @@ export default class BoothSettingScreen extends Component {
         )
     }
 }
+*/}
