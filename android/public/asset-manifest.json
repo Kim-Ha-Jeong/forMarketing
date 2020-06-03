@@ -2,9 +2,7 @@
   "files": {
     "app.js": "/app.js",
     "app.js.map": "/app.js.map",
-    "back-icon.png": "/35ba0eaec5a4f5ed12ca16fabeae451d.png",
-    "icon.png": "/4ffa4d516010b2f86084451d251ae718.png",
-    "back-icon-mask.png": "/5223c8d9b0d08b82a5670fb5f71faf78.png"
+    "../../web-build/index.html": "/../../web-build/index.html"
   },
   "entrypoints": [
     "app.js"
