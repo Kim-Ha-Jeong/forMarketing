@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "422864243299",
+    "firebase_url": "https://formarketing-dfd40.firebaseio.com",
+    "project_id": "formarketing-dfd40",
+    "storage_bucket": "formarketing-dfd40.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:422864243299:android:b518d5a7725cf61569c656",
+        "android_client_info": {
+          "package_name": "com.ewhaian.formarketing"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "422864243299-nf0co68d73kfp8clakubv0ljn6r15htt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeWSzskX1Mrl7R9QktsOg4XVQfSJt-tG4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "422864243299-nf0co68d73kfp8clakubv0ljn6r15htt.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "422864243299-0rfv2uqcmnacfc54ibvk8h0q1aaiatvs.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.ewhaian.formarketing"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
