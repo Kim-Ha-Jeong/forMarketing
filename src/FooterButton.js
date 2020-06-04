@@ -5,7 +5,7 @@ import {
 } from 'react-native';
 import styles from './Style'
 
-export default class FooterButton extends Component {
+export default class FooterButton extends React.Component {
     constructor(props){
         super(props)
     }

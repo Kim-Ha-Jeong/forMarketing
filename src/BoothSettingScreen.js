@@ -9,9 +9,9 @@ import { Picker } from '@react-native-community/picker';
 import styles from './Style';
 import Button from './FooterButton';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import firebase from 'react-native-firebase';
+import * as firebase from 'firebase';
 
-export default class BoothSettingScreen extends Component {
+export default class BoothSettingScreen extends React.Component {
 
     constructor(props) {
         super(props);

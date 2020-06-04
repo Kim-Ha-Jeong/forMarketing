@@ -9,9 +9,9 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import Row from './BoothRow';
 import BoothButton from './BoothButton';
 import Button from './FooterButton';
-import firebase from 'react-native-firebase';
+import * as firebase from 'firebase';
 
-export default class Booth extends Component {
+export default class Booth extends React.Component {
     filter = () => {
         firebase.database().ref().child("labor").once("value")
             .then((result) => {

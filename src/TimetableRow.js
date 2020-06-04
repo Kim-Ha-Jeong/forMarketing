@@ -5,7 +5,7 @@ import {
 import styles from './Style'
 import TileButton from './TileButton'
 
-export default class TimetableRow extends Component {
+export default class TimetableRow extends React.Component {
     constructor(props) {
         super(props)
     }

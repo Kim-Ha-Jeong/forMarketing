@@ -8,10 +8,10 @@ import {
 import styles from './Style';
 import Button from './FooterButton';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import firebase from 'react-native-firebase'
+import * as firebase from 'firebase';
 import Toast from 'react-native-easy-toast';
 
-export default class SettingScreen extends Component {
+export default class SettingScreen extends React.Component {
 
     handleSignOut = () => {
         firebase

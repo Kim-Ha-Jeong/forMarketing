@@ -4,9 +4,9 @@ import {
     Text,
 } from 'react-native';
 import styles from './Style';
-import firebase from 'react-native-firebase';
+import * as firebase from 'firebase';
 
-export default class BoothButton extends Component {
+export default class BoothButton extends React.Component {
     constructor(props) {
         super(props)
         this.state = {

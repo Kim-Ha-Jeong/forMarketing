@@ -9,10 +9,10 @@ import {
 import styles from './Style';
 import FooterButton from './FooterButton';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import firebase from 'react-native-firebase';
+import * as firebase from 'firebase';
 import Toast from 'react-native-easy-toast';
 
-export default class SignUpScreen extends Component {
+export default class SignUpScreen extends React.Component {
 
     constructor(props) {
         super(props);

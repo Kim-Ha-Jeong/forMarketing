@@ -9,9 +9,9 @@ import styles from './Style';
 import Button from './FooterButton';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import firebase from 'react-native-firebase';
+import * as firebase from 'firebase';
 
-export default class MainScreen extends Component {
+export default class MainScreen extends React.Component {
 
     constructor(props) {
         super(props);

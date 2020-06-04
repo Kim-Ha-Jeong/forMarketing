@@ -9,7 +9,7 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import Row from './EventRow';
 import MakeButton from './EventButton';
 
-export default class Booth extends Component {
+export default class Booth extends React.Component {
     render() {
         return (
             <View style={styles.container}>

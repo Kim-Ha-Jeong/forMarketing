@@ -5,7 +5,7 @@ import {
 import styles from './Style'
 import MakeButton from './EventButton'
 
-export default class BoothRow extends Component {
+export default class BoothRow extends React.Component {
     constructor(props) {
         super(props)
     }

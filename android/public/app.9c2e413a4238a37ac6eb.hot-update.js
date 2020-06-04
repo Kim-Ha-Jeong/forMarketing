@@ -1,0 +1,15 @@
+webpackHotUpdate("app",{
+
+/***/ "../../../../src/LaborDetail.js":
+/*!*********************************************************************!*\
+  !*** C:/Users/kha03/Desktop/forMarketing-master/src/LaborDetail.js ***!
+  \*********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var _interopRequireDefault=__webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "../../../@babel/runtime/helpers/interopRequireDefault.js");var _interopRequireWildcard=__webpack_require__(/*! @babel/runtime/helpers/interopRequireWildcard */ "../../../@babel/runtime/helpers/interopRequireWildcard.js");Object.defineProperty(exports,"__esModule",{value:true});exports.default=void 0;var _classCallCheck2=_interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ "../../../@babel/runtime/helpers/classCallCheck.js"));var _createClass2=_interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/createClass */ "../../../@babel/runtime/helpers/createClass.js"));var _possibleConstructorReturn2=_interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/possibleConstructorReturn */ "../../../@babel/runtime/helpers/possibleConstructorReturn.js"));var _getPrototypeOf2=_interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/getPrototypeOf */ "../../../@babel/runtime/helpers/getPrototypeOf.js"));var _inherits2=_interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/inherits */ "../../../@babel/runtime/helpers/inherits.js"));var _react=_interopRequireWildcard(__webpack_require__(/*! react */ "../../../react/index.js"));var _reactNative=__webpack_require__(/*! react-native */ "../../../react-native-web/dist/index.js");var _Style=_interopRequireDefault(__webpack_require__(/*! ./Style */ "../../../../src/Style.js"));var firebase=_interopRequireWildcard(__webpack_require__(/*! firebase */ "../../../firebase/dist/index.cjs.js"));var _jsxFileName="C:\\Users\\kha03\\Desktop\\forMarketing-master\\src\\LaborDetail.js";var laborDetail=function(_React$Component){(0,_inherits2.default)(laborDetail,_React$Component);function laborDetail(props){var _this;(0,_classCallCheck2.default)(this,laborDetail);_this=(0,_possibleConstructorReturn2.default)(this,(0,_getPrototypeOf2.default)(laborDetail).call(this,props));_this.state={name:[],txt:''};return _this;}(0,_createClass2.default)(laborDetail,[{key:"componentDidMount",value:function componentDidMount(){firebase.database().ref().child("users").once("value").then(function(result){result.forEach(function(resultChild){var key=resultChild.key;var nametest=resultChild.child('name').val().slice(1,3);var name=nametest.concat(" ");});});}},{key:"render",value:function render(){return _react.default.createElement(View,{__source:{fileName:_jsxFileName,lineNumber:32}});}}]);return laborDetail;}(_react.default.Component);exports.default=laborDetail;
+
+/***/ })
+
+})
+//# sourceMappingURL=app.9c2e413a4238a37ac6eb.hot-update.js.map

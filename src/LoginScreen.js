@@ -8,10 +8,10 @@ import {
 } from 'react-native';
 import styles from './Style';
 import FooterButton from './FooterButton';
-import firebase from 'react-native-firebase';
+import * as firebase from 'firebase';
 import Toast from 'react-native-easy-toast';
 
-export default class LoginScreen extends Component{
+export default class LoginScreen extends React.Component{
     constructor(props){
         super(props);
         this.state = {

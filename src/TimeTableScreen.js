@@ -8,11 +8,10 @@ import {
 } from 'react-native';
 import styles from './Style';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import firebase from 'react-native-firebase';
 import Row from './TimetableRow';
 import TileButton from './TileButton';
 
-export default class Timetable extends Component {
+export default class Timetable extends React.Component {
 
   render() {
     return (
